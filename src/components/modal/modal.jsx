@@ -22,11 +22,12 @@ export const Modal = ({
 			>
 				<div className={styles.body} onClick={(e) => e.stopPropagation()}>
 					<InputWithButton
-						addInputValue={addInputValue}
+						initialValue={addInputValue}
 						setAddInputValue={setAddInputValue}
 						onCreate={onCreate}
 						isCreated={isCreated}
 						placeholder='Создать новую задачу...'
+						buttonText='Создать'
 					/>
 				</div>
 			</div>

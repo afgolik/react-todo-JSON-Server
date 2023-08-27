@@ -1,8 +1,16 @@
 import styles from './input-with-button.module.css';
 import { Input } from './input';
-import {Button} from "../button/button";
+import { Button } from '../button/button';
 
-export const InputWithButton = ({ addInputValue, setAddInputValue, placeholder }) => {
+export const InputWithButton = ({
+	setAddInputValue,
+	placeholder,
+	buttonText,
+	onCreate,
+	isCreated,
+	onBlur,
+	initialValue,
+}) => {
 	const onSubmit = (e) => {
 		e.preventDefault();
 	};
@@ -10,11 +18,12 @@ export const InputWithButton = ({ addInputValue, setAddInputValue, placeholder }
 		<form className={styles.form} onSubmit={onSubmit}>
 			<Input
 				type='text'
-				initialValue={addInputValue}
+				initialValue={initialValue}
 				onChange={setAddInputValue}
 				placeholder={placeholder}
+				onBlur={onBlur}
 			/>
-			<Button text='Найти' />
+			<Button text={buttonText} onClick={onCreate} disabled={isCreated} />
 		</form>
 	);
 };

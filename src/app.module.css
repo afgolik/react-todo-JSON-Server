@@ -1,6 +1,6 @@
 .app {
     text-align: center;
-    margin: 0 auto;
+    margin: 50px auto;
     font-size: 30px;
     max-width: 70%;
     width: 100%;
@@ -9,6 +9,9 @@
     margin-top: 50px;
     font-size: 3rem;
     line-height: 2.5rem;
+}
+.search {
+    margin-bottom: 40px;
 }
 /*--------------------------------------*/
 

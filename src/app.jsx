@@ -21,9 +21,12 @@ export const App = () => {
 
 	return (
 		<div className={styles.app}>
-			<InputWithButton
+			<div className={styles.search}>
+				<InputWithButton
 				placeholder='Найти задачу...'
-			/>
+				buttonText='Найти'
+				/>
+			</div>
 			<Modal
 				active={modalActive}
 				setActive={setModalActive}
