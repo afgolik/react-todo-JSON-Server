@@ -5,20 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36e0a20b-f556-4403-957a-2210e0e98be6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/search/search.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/search/search.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/modal/modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/modal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/text-field/input-with-button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text-field/input-with-button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text-field/input-with-button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text-field/input-with-button.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todo/todo-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/todo-item.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/db.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -41,6 +47,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

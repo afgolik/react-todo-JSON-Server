@@ -6,10 +6,10 @@ export const InputWithButton = ({
 	setAddInputValue,
 	placeholder,
 	buttonText,
-	onCreate,
 	isCreated,
 	onBlur,
 	initialValue,
+	onClick,
 }) => {
 	const onSubmit = (e) => {
 		e.preventDefault();
@@ -23,7 +23,7 @@ export const InputWithButton = ({
 				placeholder={placeholder}
 				onBlur={onBlur}
 			/>
-			<Button text={buttonText} onClick={onCreate} disabled={isCreated} />
+			<Button text={buttonText} onClick={() => onClick()} disabled={isCreated} />
 		</form>
 	);
 };

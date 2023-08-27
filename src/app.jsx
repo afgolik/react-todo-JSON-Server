@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styles from './app.module.css';
 import { useState } from 'react';
 import { TodoList } from './components/todo/todo-list';
@@ -6,6 +6,7 @@ import { InputWithButton } from './components/text-field/input-with-button';
 import { Loader } from './components/loader/loader';
 import {useRequestAddTodo, useRequestDeleteTodo, useRequestUpdateStatus, useRequestGetTodos, useRequestUpdateTodo} from './hook';
 import { Modal } from './components/modal/modal';
+import {Search} from "./components/search/search";
 
 export const App = () => {
 	const [modalActive, setModalActive] = useState(false);
@@ -17,16 +18,21 @@ export const App = () => {
 	const { isDeleted, requestDeleteTodo } = useRequestDeleteTodo(todoList, refreshTodos);
 	const { isEdited, editableElementId, requestUpdateTodo, setEditableElementId } = useRequestUpdateTodo(todoList, refreshTodos);
 
+	const [filteredTodoList, setFilteredTodoList] = useState(todoList)
+
+	useEffect(() => {
+		setFilteredTodoList(todoList)
+	}, [todoList])
+	const searchingTodo = (search) => {
+		setFilteredTodoList(filteredTodoList.filter((todoList) => todoList.todo.includes(search)));
+	};
+
 	const onClickChange = (id) => setEditableElementId(id);
+
 
 	return (
 		<div className={styles.app}>
-			<div className={styles.search}>
-				<InputWithButton
-				placeholder='Найти задачу...'
-				buttonText='Найти'
-				/>
-			</div>
+			<Search onClick={searchingTodo} />
 			<Modal
 				active={modalActive}
 				setActive={setModalActive}
@@ -37,7 +43,7 @@ export const App = () => {
 			/>
 			{isLoading ? <Loader /> : todoList.length ?
 				<TodoList
-					todoList={todoList}
+					todoList={filteredTodoList}
 					isUpdated={isUpdated}
 					onChange={requestUpdateStatus}
 					onClick={requestDeleteTodo}

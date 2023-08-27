@@ -24,7 +24,7 @@ export const Modal = ({
 					<InputWithButton
 						initialValue={addInputValue}
 						setAddInputValue={setAddInputValue}
-						onCreate={onCreate}
+						onClick={onCreate}
 						isCreated={isCreated}
 						placeholder='Создать новую задачу...'
 						buttonText='Создать'
