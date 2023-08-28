@@ -1,14 +1,14 @@
 import styles from './modal.module.css';
-import { InputWithButton } from '../text-field/input-with-button';
+import { InputWithButton } from '../input/input-with-button';
 import { Button } from '../button/button';
 
 export const Modal = ({
 	active,
 	setActive,
-	addInputValue,
-	setAddInputValue,
-	onCreate,
-	isCreated,
+						  initialValue,
+						  onChange,
+						  onClick,
+	disabled,
 }) => {
 	const openModal = () => {
 		setActive(true);
@@ -22,10 +22,10 @@ export const Modal = ({
 			>
 				<div className={styles.body} onClick={(e) => e.stopPropagation()}>
 					<InputWithButton
-						initialValue={addInputValue}
-						setAddInputValue={setAddInputValue}
-						onClick={onCreate}
-						isCreated={isCreated}
+						initialValue={initialValue}
+						onChange={onChange}
+						onClick={onClick}
+						disabled={disabled}
 						placeholder='Создать новую задачу...'
 						buttonText='Создать'
 					/>

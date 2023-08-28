@@ -2,11 +2,12 @@ import React, {useEffect} from 'react';
 import styles from './app.module.css';
 import { useState } from 'react';
 import { TodoList } from './components/todo/todo-list';
-import { InputWithButton } from './components/text-field/input-with-button';
-import { Loader } from './components/loader/loader';
+import { InputWithButton } from './components/ui/input/input-with-button';
+import { Loader } from './components/ui/loader/loader';
 import {useRequestAddTodo, useRequestDeleteTodo, useRequestUpdateStatus, useRequestGetTodos, useRequestUpdateTodo} from './hook';
-import { Modal } from './components/modal/modal';
-import {Search} from "./components/search/search";
+import { Modal } from './components/ui/modal/modal';
+import {Search} from "./components/ui/search/search";
+import {Button} from "./components/ui/button/button";
 
 export const App = () => {
 	const [modalActive, setModalActive] = useState(false);
@@ -29,17 +30,16 @@ export const App = () => {
 
 	const onClickChange = (id) => setEditableElementId(id);
 
-
 	return (
 		<div className={styles.app}>
 			<Search onClick={searchingTodo} />
 			<Modal
 				active={modalActive}
 				setActive={setModalActive}
-				addInputValue={addInputValue}
-				setAddInputValue={setAddInputValue}
-				onCreate={requestAddTodo}
-				isCreated={isCreated}
+				initialValue={addInputValue}
+				onChange={setAddInputValue}
+				onClick={requestAddTodo}
+				disabled={isCreated}
 			/>
 			{isLoading ? <Loader /> : todoList.length ?
 				<TodoList

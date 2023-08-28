@@ -1,5 +1,5 @@
 import styles from './search.module.css'
-import {InputWithButton} from "../text-field/input-with-button";
+import {InputWithButton} from "../input/input-with-button";
 import React from "react";
 
 export const Search = ({onClick}) => {

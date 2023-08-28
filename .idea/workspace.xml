@@ -5,13 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36e0a20b-f556-4403-957a-2210e0e98be6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/search/search.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/search/search.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modal/modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/modal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text-field/input-with-button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text-field/input-with-button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button/button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button/button.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/change-button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button/change-button.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/delete-button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button/delete-button.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loader/loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/loader/loader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loader/loader.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/loader/loader.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modal/modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/modal/modal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modal/modal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/modal/modal.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search/search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/search/search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search/search.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/search/search.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text-field/input-with-button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input/input-with-button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text-field/input-with-button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input/input-with-button.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text-field/input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input/input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text-field/input.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input/input.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo/todo-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/todo-item.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/db.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +59,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/rgabi/My/react/react-todo-JSON-Server/src/components/ui/input",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -57,6 +70,17 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rgabi\My\react\react-todo-JSON-Server\src\components\ui\input" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rgabi\My\react\react-todo-JSON-Server\src\components\ui\input" />
+      <recent name="C:\Users\rgabi\My\react\react-todo-JSON-Server\src\components\ui" />
+      <recent name="C:\Users\rgabi\My\react\react-todo-JSON-Server\src\components\ui\search" />
+      <recent name="C:\Users\rgabi\My\react\react-todo-JSON-Server\src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />

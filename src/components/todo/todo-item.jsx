@@ -1,6 +1,6 @@
 import styles from './todo-item.module.css';
-import {Button} from "../button/button";
-import {InputWithButton} from "../text-field/input-with-button";
+import {Button} from "../ui/button/button";
+import {InputWithButton} from "../ui/input/input-with-button";
 
 export const TodoItem = ({
 	id,
