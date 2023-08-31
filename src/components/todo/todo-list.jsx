@@ -12,7 +12,7 @@ export const TodoList = ({
 }) => {
 	return (
 		<>
-			{todoList.map(({ id, todo, completed }) =>
+			{todoList.map(({ id, todo, completed }) => (
 				<TodoItem
 					key={id}
 					id={id}
@@ -26,7 +26,7 @@ export const TodoList = ({
 					editableElementId={editableElementId}
 					onBlur={onBlur}
 				/>
-			)}
+			))}
 		</>
 	);
 };
