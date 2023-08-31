@@ -1,12 +1,16 @@
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
 
-export const useSortTodo = (searchedTodoList, setSearchedTodoList) => {
+export const useSortTodo = (searchedTodoList) => {
+	const [sortedTodoList, setSortedTodoList] = useState(searchedTodoList);
 	const [isSorted, setIsSorted] = useState(false);
 
+	useEffect(() => {
+		setSortedTodoList(searchedTodoList);
+	}, [searchedTodoList]);
 	const sortTodo = () => {
 		setIsSorted(true);
-		setSearchedTodoList(
-			searchedTodoList.sort((a, b) => {
+		setSortedTodoList(
+			sortedTodoList.sort((a, b) => {
 				let todoA = a.todo.toUpperCase();
 				let todoB = b.todo.toUpperCase();
 				return todoA < todoB ? -1 : 1;
@@ -15,6 +19,7 @@ export const useSortTodo = (searchedTodoList, setSearchedTodoList) => {
 	};
 	return {
 		isSorted,
+		sortedTodoList,
 		sortTodo,
 	};
 };

@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36e0a20b-f556-4403-957a-2210e0e98be6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hook/use-searching-todo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hook/use-sort-todo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todo/todo-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/todo-item.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todo/todo-list.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/todo-list.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/button/button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button/button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/input/input-with-button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input/input-with-button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/input/input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input/input.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/loader/loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/loader/loader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/modal/modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/modal/modal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/search/search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/search/search.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/search/search.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/search/search.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hook/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hook/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hook/use-searching-todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hook/use-searching-todo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/db.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="search-without-some-components" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -93,6 +81,7 @@
       <list>
         <item itemvalue="npm.start" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -114,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692914577527</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix sort - doesn't work">
+      <created>1693493457879</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693493457879</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +130,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="create working todo" />
-    <option name="LAST_COMMIT_MESSAGE" value="create working todo" />
+    <MESSAGE value="fix sort - doesn't work" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix sort - doesn't work" />
   </component>
 </project>
