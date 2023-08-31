@@ -22,6 +22,9 @@ export const useRequestUpdateTodo = (todoList, refreshTodos) => {
 						console.log('Задача изменена:', response);
 						refreshTodos();
 					})
+					.catch(error => {
+						console.log('Ошибка обновления данных на сервере', error);
+					})
 					.finally(() => {
 						setIsEdited(false);
 						setEditableElementId(null);

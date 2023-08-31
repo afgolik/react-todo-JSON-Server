@@ -21,6 +21,9 @@ export const useRequestUpdateStatus = (todoList, refreshTodos) => {
 						console.log('Статус изменен:', response);
 						refreshTodos();
 					})
+					.catch(error => {
+						console.log('Ошибка обновления данных на сервере', error);
+					})
 					.finally(() => setIsUpdated(false));
 			}
 		});

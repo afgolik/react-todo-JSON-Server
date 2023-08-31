@@ -15,6 +15,9 @@ export const useRequestDeleteTodo = (todoList, refreshTodos) => {
 						console.log('Задача удалена', response);
 						refreshTodos();
 					})
+					.catch(error => {
+						console.log('Ошибка удаления данных с сервера', error);
+					})
 					.finally(() => setIsDeleted(false));
 			}
 		});

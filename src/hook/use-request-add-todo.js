@@ -20,6 +20,9 @@ export const useRequestAddTodo = (refreshTodos) => {
 				console.log('Новая задача добавлена:', response);
 				refreshTodos();
 			})
+			.catch(error => {
+				console.log('Ошибка добавления данных на сервер', error);
+			})
 			.finally(() => {
 				setIsCreated(false);
 				setAddInputValue('');

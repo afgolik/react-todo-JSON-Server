@@ -9,6 +9,9 @@ export const useRequestGetTodos = (refreshTodosFlag) => {
 		fetch(TODO_LIST)
 			.then((loadedData) => loadedData.json())
 			.then((loadedTodoList) => setTodoList(loadedTodoList))
+			.catch(error => {
+				console.log('Ошибка получения данных с сервера', error);
+			})
 			.finally(() => setIsLoading(false));
 	}, [refreshTodosFlag]);
 	return {
