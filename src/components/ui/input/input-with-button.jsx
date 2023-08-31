@@ -1,16 +1,17 @@
 import styles from './input-with-button.module.css';
 import { Input } from './input';
 import { Button } from '../button/button';
-import {useState} from "react";
+import { useState } from 'react';
 
 export const InputWithButton = ({
 	onChange,
 	placeholder,
 	buttonText,
-									disabled,
+	disabled,
 	onBlur,
 	initialValue,
 	onClick,
+	buttonType,
 }) => {
 	const [value, setValue] = useState(initialValue || '');
 	const onSubmit = (e) => {
@@ -21,12 +22,12 @@ export const InputWithButton = ({
 		if (onChange) {
 			onChange(value);
 		}
-	}
+	};
 	const handleOnClick = () => {
-		if(onClick) {
-			onClick(value)
+		if (onClick) {
+			onClick(value);
 		}
-	}
+	};
 	return (
 		<form className={styles.form} onSubmit={onSubmit}>
 			<Input
@@ -36,7 +37,7 @@ export const InputWithButton = ({
 				placeholder={placeholder}
 				onBlur={onBlur}
 			/>
-			<Button text={buttonText} onClick={handleOnClick} disabled={disabled} />
+			<Button text={buttonText} onClick={handleOnClick} buttonType={buttonType} disabled={disabled} />
 		</form>
 	);
 };

@@ -5,9 +5,9 @@ import { Button } from '../button/button';
 export const Modal = ({
 	active,
 	setActive,
-						  initialValue,
-						  onChange,
-						  onClick,
+	initialValue,
+	onChange,
+	onClick,
 	disabled,
 }) => {
 	const openModal = () => {
@@ -15,7 +15,7 @@ export const Modal = ({
 	};
 	return (
 		<div className={styles.modal}>
-			<Button onClick={openModal} text='Создать новую задачу' />
+			<Button onClick={openModal} buttonType='button' text='Создать новую задачу' />
 			<div
 				className={active ? `${styles.active} ${styles.window}` : styles.window}
 				onClick={() => setActive(false)}
@@ -28,6 +28,7 @@ export const Modal = ({
 						disabled={disabled}
 						placeholder='Создать новую задачу...'
 						buttonText='Создать'
+						buttonType='submit'
 					/>
 				</div>
 			</div>

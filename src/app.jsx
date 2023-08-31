@@ -1,13 +1,19 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import styles from './app.module.css';
 import { useState } from 'react';
 import { TodoList } from './components/todo/todo-list';
-import { InputWithButton } from './components/ui/input/input-with-button';
 import { Loader } from './components/ui/loader/loader';
-import {useRequestAddTodo, useRequestDeleteTodo, useRequestUpdateStatus, useRequestGetTodos, useRequestUpdateTodo} from './hook';
+import {
+	useRequestAddTodo,
+	useRequestDeleteTodo,
+	useRequestUpdateStatus,
+	useRequestGetTodos,
+	useRequestUpdateTodo,
+	useSearchingTodo, useSortTodo
+} from './hook';
 import { Modal } from './components/ui/modal/modal';
-import {Search} from "./components/ui/search/search";
-import {Button} from "./components/ui/button/button";
+import { Search } from "./components/ui/search/search";
+import { Button } from "./components/ui/button/button";
 
 export const App = () => {
 	const [modalActive, setModalActive] = useState(false);
@@ -18,32 +24,30 @@ export const App = () => {
 	const { isUpdated, requestUpdateStatus } = useRequestUpdateStatus(todoList,	refreshTodos);
 	const { isDeleted, requestDeleteTodo } = useRequestDeleteTodo(todoList, refreshTodos);
 	const { isEdited, editableElementId, requestUpdateTodo, setEditableElementId } = useRequestUpdateTodo(todoList, refreshTodos);
+	const { isSearched, searchedTodoList, setSearchedTodoList, searchingTodo, onReset } = useSearchingTodo(todoList);
+	const { isSorted, sortTodo } = useSortTodo(searchedTodoList, setSearchedTodoList);
 
-	const [filteredTodoList, setFilteredTodoList] = useState(todoList)
-
-	useEffect(() => {
-		setFilteredTodoList(todoList)
-	}, [todoList])
-	const searchingTodo = (search) => {
-		setFilteredTodoList(filteredTodoList.filter((todoList) => todoList.todo.includes(search)));
-	};
 
 	const onClickChange = (id) => setEditableElementId(id);
 
 	return (
 		<div className={styles.app}>
-			<Search onClick={searchingTodo} />
-			<Modal
-				active={modalActive}
-				setActive={setModalActive}
-				initialValue={addInputValue}
-				onChange={setAddInputValue}
-				onClick={requestAddTodo}
-				disabled={isCreated}
-			/>
+			<Search onClick={searchingTodo} isSearched={isSearched} onReset={onReset} />
+			<div className={styles.buttonBlock}>
+				<Modal
+					active={modalActive}
+					setActive={setModalActive}
+					initialValue={addInputValue}
+					onChange={setAddInputValue}
+					onClick={requestAddTodo}
+					disabled={isCreated}
+				/>
+				<Button text='Отсортировать' onClick={sortTodo} className={isSorted ? styles.sortButton : null} />
+
+			</div>
 			{isLoading ? <Loader /> : todoList.length ?
 				<TodoList
-					todoList={filteredTodoList}
+					todoList={searchedTodoList}
 					isUpdated={isUpdated}
 					onChange={requestUpdateStatus}
 					onClick={requestDeleteTodo}

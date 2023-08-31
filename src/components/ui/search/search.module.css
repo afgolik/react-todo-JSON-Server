@@ -1,3 +1,9 @@
 .search {
     margin-bottom: 40px;
+    position: relative;
+}
+.button {
+    position: absolute;
+    top: 0;
+    right: 80px;
 }
