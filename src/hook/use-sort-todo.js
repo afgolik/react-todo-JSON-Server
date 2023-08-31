@@ -5,17 +5,22 @@ export const useSortTodo = (searchedTodoList) => {
 	const [isSorted, setIsSorted] = useState(false);
 
 	useEffect(() => {
-		setSortedTodoList(searchedTodoList);
+		setSortedTodoList([...searchedTodoList]);
 	}, [searchedTodoList]);
 	const sortTodo = () => {
-		setIsSorted(true);
-		setSortedTodoList(
-			sortedTodoList.sort((a, b) => {
-				let todoA = a.todo.toUpperCase();
-				let todoB = b.todo.toUpperCase();
-				return todoA < todoB ? -1 : 1;
-			}),
-		);
+		if (isSorted) {
+			setIsSorted(false);
+			setSortedTodoList(searchedTodoList);
+		} else {
+			setIsSorted(true);
+			setSortedTodoList(
+				sortedTodoList.sort((a, b) => {
+					let todoA = a.todo.toUpperCase();
+					let todoB = b.todo.toUpperCase();
+					return todoA < todoB ? -1 : 1;
+				}),
+			);
+		}
 	};
 	return {
 		isSorted,
