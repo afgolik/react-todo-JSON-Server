@@ -42,7 +42,7 @@ export const App = () => {
 					onClick={requestAddTodo}
 					disabled={isCreated}
 				/>
-				<Button text='Отсортировать' onClick={sortTodo} className={isSorted ? styles.sortButton : null} />
+				<Button text={isSorted ? 'Не сортировать' : 'Отсортировать'} onClick={sortTodo} className={isSorted ? styles.sortButton : null} />
 			</div>
 			{isLoading ? <Loader /> : todoList.length ?
 				<TodoList

@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="36e0a20b-f556-4403-957a-2210e0e98be6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hook/use-sort-todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hook/use-sort-todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693496051231</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="toggle sort">
+      <created>1693496685684</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693496685684</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +145,7 @@
     <MESSAGE value="create working todo" />
     <MESSAGE value="fix sort - doesn't work" />
     <MESSAGE value="change button color" />
-    <option name="LAST_COMMIT_MESSAGE" value="change button color" />
+    <MESSAGE value="toggle sort" />
+    <option name="LAST_COMMIT_MESSAGE" value="toggle sort" />
   </component>
 </project>
