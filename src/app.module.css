@@ -15,7 +15,10 @@
     gap: 10px;
 }
 .sortButton {
-    background-color: gray !important;
+    background-color: #364974 !important;
+}
+.sortButton:hover {
+    background-color: var(--primary-color) !important;
 }
 /*--------------------------------------*/
 
