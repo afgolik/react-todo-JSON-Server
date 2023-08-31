@@ -24,8 +24,8 @@ export const App = () => {
 	const { isUpdated, requestUpdateStatus } = useRequestUpdateStatus(todoList,	refreshTodos);
 	const { isDeleted, requestDeleteTodo } = useRequestDeleteTodo(todoList, refreshTodos);
 	const { isEdited, editableElementId, requestUpdateTodo, setEditableElementId } = useRequestUpdateTodo(todoList, refreshTodos);
-	const { isSearched, searchedTodoList, setSearchedTodoList, searchingTodo, onReset } = useSearchingTodo(todoList);
-	const { isSorted, sortedTodoList, sortTodo } = useSortTodo(searchedTodoList, setSearchedTodoList);
+	const { isSearched, searchedTodoList, searchingTodo, onReset } = useSearchingTodo(todoList);
+	const { isSorted, sortedTodoList, sortTodo } = useSortTodo(searchedTodoList);
 
 
 	const onClickChange = (id) => setEditableElementId(id);
@@ -43,7 +43,6 @@ export const App = () => {
 					disabled={isCreated}
 				/>
 				<Button text='Отсортировать' onClick={sortTodo} className={isSorted ? styles.sortButton : null} />
-
 			</div>
 			{isLoading ? <Loader /> : todoList.length ?
 				<TodoList

@@ -17,7 +17,6 @@ export const useSearchingTodo = (todoList) => {
 	return {
 		isSearched,
 		searchedTodoList,
-		setSearchedTodoList,
 		searchingTodo,
 		onReset,
 	};
