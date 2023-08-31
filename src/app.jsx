@@ -25,7 +25,7 @@ export const App = () => {
 	const { isDeleted, requestDeleteTodo } = useRequestDeleteTodo(todoList, refreshTodos);
 	const { isEdited, editableElementId, requestUpdateTodo, setEditableElementId } = useRequestUpdateTodo(todoList, refreshTodos);
 	const { isSearched, searchedTodoList, setSearchedTodoList, searchingTodo, onReset } = useSearchingTodo(todoList);
-	const { isSorted, sortTodo } = useSortTodo(searchedTodoList, setSearchedTodoList);
+	const { isSorted, sortedTodoList, sortTodo } = useSortTodo(searchedTodoList, setSearchedTodoList);
 
 
 	const onClickChange = (id) => setEditableElementId(id);
@@ -47,7 +47,7 @@ export const App = () => {
 			</div>
 			{isLoading ? <Loader /> : todoList.length ?
 				<TodoList
-					todoList={searchedTodoList}
+					todoList={sortedTodoList}
 					isUpdated={isUpdated}
 					onChange={requestUpdateStatus}
 					onClick={requestDeleteTodo}
