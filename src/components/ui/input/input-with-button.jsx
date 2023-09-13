@@ -37,7 +37,12 @@ export const InputWithButton = ({
 				placeholder={placeholder}
 				onBlur={onBlur}
 			/>
-			<Button text={buttonText} onClick={handleOnClick} buttonType={buttonType} disabled={disabled} />
+			<Button
+				text={buttonText}
+				onClick={handleOnClick}
+				buttonType={buttonType}
+				disabled={disabled}
+			/>
 		</form>
 	);
 };

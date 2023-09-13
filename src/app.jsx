@@ -20,7 +20,7 @@ export const App = () => {
 	const [refreshTodosFlag, setRefreshTodosFlag] = useState(false);
 	const refreshTodos = () => setRefreshTodosFlag(!refreshTodosFlag);
 	const { todoList, isLoading } = useRequestGetTodos(refreshTodosFlag);
-	const { isCreated, requestAddTodo, addInputValue, setAddInputValue } = useRequestAddTodo(refreshTodos);
+	const { isCreated, requestAddTodo, addInputValue, setAddInputValue } = useRequestAddTodo(refreshTodos, setModalActive);
 	const { isUpdated, requestUpdateStatus } = useRequestUpdateStatus(todoList,	refreshTodos);
 	const { isDeleted, requestDeleteTodo } = useRequestDeleteTodo(todoList, refreshTodos);
 	const { isEdited, editableElementId, requestUpdateTodo, setEditableElementId } = useRequestUpdateTodo(todoList, refreshTodos);

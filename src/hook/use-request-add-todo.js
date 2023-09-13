@@ -1,7 +1,7 @@
 import { TODO_LIST } from '../utils/url';
 import { useState } from 'react';
 
-export const useRequestAddTodo = (refreshTodos) => {
+export const useRequestAddTodo = (refreshTodos, setModalActive) => {
 	const [isCreated, setIsCreated] = useState(false);
 	const [addInputValue, setAddInputValue] = useState('');
 
@@ -26,6 +26,7 @@ export const useRequestAddTodo = (refreshTodos) => {
 			.finally(() => {
 				setIsCreated(false);
 				setAddInputValue('');
+				setModalActive(false);
 			});
 	};
 	return {

@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="36e0a20b-f556-4403-957a-2210e0e98be6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/input/input-with-button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input/input-with-button.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hook/use-request-add-todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hook/use-request-add-todo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hook/use-request-delete-todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hook/use-request-delete-todo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hook/use-request-get-todos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hook/use-request-get-todos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hook/use-request-update-status.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hook/use-request-update-status.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hook/use-request-update-todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hook/use-request-update-todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hook/use-sort-todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hook/use-sort-todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/db.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +96,8 @@
       <updated>1692914306323</updated>
       <workItem from="1692914310112" duration="5615000" />
       <workItem from="1693476804802" duration="12895000" />
-      <workItem from="1693516431026" duration="331000" />
+      <workItem from="1693516431026" duration="954000" />
+      <workItem from="1694594139026" duration="4452000" />
     </task>
     <task id="LOCAL-00001" summary="create working todo">
       <created>1692914577527</created>
@@ -134,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693497187792</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="catch errors">
+      <created>1693516781044</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693516781044</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +165,7 @@
     <MESSAGE value="change button color" />
     <MESSAGE value="toggle sort" />
     <MESSAGE value="toggle button text" />
-    <option name="LAST_COMMIT_MESSAGE" value="toggle button text" />
+    <MESSAGE value="catch errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="catch errors" />
   </component>
 </project>
