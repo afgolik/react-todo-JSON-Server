@@ -12,6 +12,8 @@ export const InputWithButton = ({
 	initialValue,
 	onClick,
 	buttonType,
+	clear,
+	buttonClassName,
 }) => {
 	const [value, setValue] = useState(initialValue || '');
 	const onSubmit = (e) => {
@@ -36,12 +38,14 @@ export const InputWithButton = ({
 				onChange={handleOnChange}
 				placeholder={placeholder}
 				onBlur={onBlur}
+				clear={clear}
 			/>
 			<Button
 				text={buttonText}
 				onClick={handleOnClick}
 				buttonType={buttonType}
 				disabled={disabled}
+				className={buttonClassName}
 			/>
 		</form>
 	);

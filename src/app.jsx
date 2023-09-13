@@ -27,7 +27,6 @@ export const App = () => {
 	const { isSearched, searchedTodoList, searchingTodo, onReset } = useSearchingTodo(todoList);
 	const { isSorted, sortedTodoList, sortTodo } = useSortTodo(searchedTodoList);
 
-
 	const onClickChange = (id) => setEditableElementId(id);
 
 	return (

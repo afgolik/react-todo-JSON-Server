@@ -82,3 +82,12 @@
 	transform: scaleX(-1);
 	font-size: 18px;
 }
+.button.change:hover {
+	background-color: #2d6b25;
+}
+.button.edit:hover {
+	background-color: #2d6b25;
+}
+.button.delete:hover {
+	background-color: brown;
+}

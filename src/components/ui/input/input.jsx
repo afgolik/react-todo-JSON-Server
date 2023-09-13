@@ -1,8 +1,14 @@
 import styles from './input.module.css';
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
 
-export const Input = ({ type, initialValue, onChange, placeholder, onBlur }) => {
+export const Input = ({ type, initialValue, onChange, placeholder, onBlur, clear }) => {
 	const [value, setValue] = useState(initialValue || '');
+
+	useEffect(() => {
+		if (clear) {
+			setValue('');
+		}
+	}, [clear]);
 	const handleOnChange = (e) => {
 		setValue(e.target.value);
 		if (onChange) {

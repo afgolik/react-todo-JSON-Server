@@ -25,7 +25,6 @@ export const useRequestAddTodo = (refreshTodos, setModalActive) => {
 			})
 			.finally(() => {
 				setIsCreated(false);
-				setAddInputValue('');
 				setModalActive(false);
 			});
 	};

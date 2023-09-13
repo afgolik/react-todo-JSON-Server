@@ -6,9 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="36e0a20b-f556-4403-957a-2210e0e98be6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo/todo-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/todo-item.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo/todo-item.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/todo-item.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ui/input/input-with-button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input/input-with-button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/input/input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input/input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/modal/modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/modal/modal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/search/search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/search/search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/search/search.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/search/search.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hook/use-request-add-todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hook/use-request-add-todo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hook/use-sort-todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hook/use-sort-todo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/db.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +103,7 @@
       <workItem from="1692914310112" duration="5615000" />
       <workItem from="1693476804802" duration="12895000" />
       <workItem from="1693516431026" duration="954000" />
-      <workItem from="1694594139026" duration="4452000" />
+      <workItem from="1694594139026" duration="8907000" />
     </task>
     <task id="LOCAL-00001" summary="create working todo">
       <created>1692914577527</created>
@@ -141,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693516781044</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="close modal button">
+      <created>1694610985308</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694610985308</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +179,7 @@
     <MESSAGE value="toggle sort" />
     <MESSAGE value="toggle button text" />
     <MESSAGE value="catch errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="catch errors" />
+    <MESSAGE value="close modal button" />
+    <option name="LAST_COMMIT_MESSAGE" value="close modal button" />
   </component>
 </project>

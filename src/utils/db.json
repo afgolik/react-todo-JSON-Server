@@ -29,41 +29,6 @@
       "todo": "php",
       "completed": false,
       "id": 8
-    },
-    {
-      "todo": "sdf",
-      "completed": false,
-      "id": 9
-    },
-    {
-      "todo": "sdef",
-      "completed": false,
-      "id": 10
-    },
-    {
-      "todo": "f",
-      "completed": false,
-      "id": 11
-    },
-    {
-      "todo": "sfdsfs",
-      "completed": false,
-      "id": 12
-    },
-    {
-      "todo": "sdffsd",
-      "completed": false,
-      "id": 13
-    },
-    {
-      "todo": "sdfgfg",
-      "completed": false,
-      "id": 14
-    },
-    {
-      "todo": "sdfsdf",
-      "completed": false,
-      "id": 15
     }
   ]
 }

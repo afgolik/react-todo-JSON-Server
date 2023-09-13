@@ -39,6 +39,7 @@ export const TodoItem = ({
 								onBlur={(value) => onBlur(id, value)}
 								initialValue={todo}
 								buttonText='&#10004;'
+								buttonClassName={`${styles.edit} ${styles.button}`}
 							/>
 						) : (
 							todo
@@ -47,7 +48,7 @@ export const TodoItem = ({
 				</div>
 				<div className={styles.buttons}>
 					<Button
-						className={styles.change}
+						className={`${styles.change} ${styles.button}`}
 						onClick={() => onClickChange(id)}
 						text='&#9998;'
 					/>
@@ -55,6 +56,7 @@ export const TodoItem = ({
 						onClick={() => onClick(id)}
 						disabled={isDeleted}
 						text='Удалить'
+						className={`${styles.delete} ${styles.button}`}
 					/>
 				</div>
 			</div>
