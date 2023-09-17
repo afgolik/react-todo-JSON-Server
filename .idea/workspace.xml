@@ -6,15 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="36e0a20b-f556-4403-957a-2210e0e98be6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todo/todo-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/todo-item.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todo/todo-item.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/todo-item.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/input/input-with-button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input/input-with-button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/input/input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input/input.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/modal/modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/modal/modal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/button/change-button.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/button/delete-button.module.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ui/search/search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/search/search.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/search/search.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/search/search.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hook/use-request-add-todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hook/use-request-add-todo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/db.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="search" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
